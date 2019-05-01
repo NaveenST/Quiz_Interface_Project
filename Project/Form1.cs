@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class Form1 : Form
+    public partial class loginform : Form
     {
-        public Form1()
+        public loginform()
         {
             InitializeComponent();
+            password_loginform.PasswordChar = '*';
+        }
+
+        private void loginform_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
