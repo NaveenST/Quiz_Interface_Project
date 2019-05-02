@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.username_loginform = new System.Windows.Forms.TextBox();
             this.password_loginform = new System.Windows.Forms.TextBox();
+            this.loginButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -76,11 +77,22 @@
             this.password_loginform.Size = new System.Drawing.Size(100, 20);
             this.password_loginform.TabIndex = 4;
             // 
+            // loginButton
+            // 
+            this.loginButton.Location = new System.Drawing.Point(317, 154);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.TabIndex = 5;
+            this.loginButton.Text = "Login";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
+            // 
             // loginform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 261);
+            this.Controls.Add(this.loginButton);
             this.Controls.Add(this.password_loginform);
             this.Controls.Add(this.username_loginform);
             this.Controls.Add(this.label3);
@@ -101,6 +113,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox username_loginform;
         private System.Windows.Forms.TextBox password_loginform;
+        private System.Windows.Forms.Button loginButton;
     }
 }
 
