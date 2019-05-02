@@ -27,6 +27,13 @@ namespace Project
         private void LoginButton_Click(object sender, EventArgs e)
         {
             user user1 = verifyLogin();
+            if (user1 != null)
+            {
+                Form2 form2 = new Form2();
+                this.Hide();
+                form2.ShowDialog();
+                this.Close();
+            }
         }
 
         private user verifyLogin()
