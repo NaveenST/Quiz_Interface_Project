@@ -40,12 +40,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(267, 242);
+            this.button1.Location = new System.Drawing.Point(294, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start Quiz";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // groupBox1
             // 
@@ -59,6 +60,7 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choose the correct response";
+            this.groupBox1.Visible = false;
             // 
             // radioButton1
             // 
