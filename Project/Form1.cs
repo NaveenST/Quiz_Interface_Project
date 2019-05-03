@@ -27,6 +27,9 @@ namespace Project
         private void LoginButton_Click(object sender, EventArgs e)
         {
             user user1 = verifyLogin();
+
+            questions_form question_form1 = new questions_form();
+            question_form1.Show();
         }
 
         private user verifyLogin()
